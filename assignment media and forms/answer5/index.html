@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Sign In</title>
+
+</head>
+
+<body>
+
+    <form id="signupForm">
+        <h2>Sign Up</h2>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="Lastname" minlength="3" required  > <br><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" minlength="3" required ><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" minlength="3"  required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" max="150" required><br><br>
+        <!--Gender Selection-->
+        <label for="Gender">Male:</label>
+        <input type="radio" name="gender"  required>
+        <label for="Gender">Female:</label>
+        <input type="radio" name="gender" required>
+        <label for="Gender">Others:</label>
+        <input type="radio" name="gender" required><br>
+        <label for="terms agreements"> I agrees to Terms and Conditions:</label>
+        <input type="checkbox" name="t&c" required>
+        <br><br>
+        <!--password-->
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="signupPassword" required>
+        <br>
+
+        <button type="button" onclick="validateSignUp()">Sign Up</button>
+    </form>
+
+    <form id="loginForm">
+        <h2>Sign In</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" minlength="3" required>
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+
+        <button type="button" onclick="validateSignIn()">Sign In</button>
+    </form>
+
+
+</body>
+
+</html>
+
